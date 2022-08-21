@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "e7b713c1-6757-416e-81b9-fd70acf7cd89",
+		"name": "Booker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateBooking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "889b9d52-5e4b-4335-9533-a1c986724bfa",
+						"exec": [
+							"var requestBody = JSON.parse(request.data);\r",
+							"var responseBody = pm.response.json();\r",
+							"var bookingId = responseBody.bookingid;\r",
+							"\r",
+							"pm.collectionVariables.set(\"bookingId\", bookingId);\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate Booking ID\", function () {\r",
+							"    pm.expect(typeof(bookingId)).to.eql(\"number\");\r",
+							"    pm.expect(bookingId).to.not.eql(null);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate First Name\", function () {\r",
+							"    pm.expect(responseBody.booking.firstname).to.eql(requestBody.firstname);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "1a394644-5b2d-4252-b67a-5c363e918383",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "66a86345-eae2-49d6-8c2a-4186e504f3fd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstname\": \"Peter\",\r\n  \"lastname\": \"Tester\",\r\n  \"totalprice\": 111,\r\n  \"depositpaid\": true,\r\n  \"bookingdates\": {\r\n    \"checkin\": \"2018-01-01\",\r\n    \"checkout\": \"2019-01-01\"\r\n  },\r\n  \"additionalneeds\": \"Breakfast\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://restful-booker.herokuapp.com/booking"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBooking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "05c32c2d-c861-4c98-bc75-f6b6c222ff7d",
+						"exec": [
+							"var requestBody = request.data;\r",
+							"var responseBody = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "f0fde2ef-2d07-4c6c-8941-4410e9d8e69a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/{{bookingId}}",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"{{bookingId}}"
+					],
+					"query": [
+						{
+							"key": "checkin",
+							"value": "2018-01-01",
+							"disabled": true
+						},
+						{
+							"key": "checkout",
+							"value": "2019-01-01",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PartilaUpdateBooking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cc10daef-d0fd-492e-aaab-54313050c16b",
+						"exec": [
+							"var requestBody = JSON.parse(request.data);\r",
+							"var responseBody = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check updates are applied correctly\", function () {\r",
+							"    pm.expect(responseBody.bookingdates.checkout).to.eql(requestBody.bookingdates.checkout);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "d9006dbd-76ba-4707-beff-a3e6979f8f10",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "token=5dca37105d0b0fc"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstname\": \"Peter\",\n\"bookingdates\": {\n\"checkout\": \"2027-07-01\"\n},\n\"additionalneeds\": \"Breakfa7st and Supper\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": "https://restful-booker.herokuapp.com/booking/{{bookingId}}"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "573ff36b-5180-497f-bfe4-24ee6475df09",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d0aa180a-e661-4865-97db-fddc759d3022",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "f89b360e-636d-459c-999f-ab31cfcf3edb",
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "3a03f0e4-3206-4785-9d73-97461a092367",
+			"key": "token",
+			"value": "abc123",
+			"type": "string"
+		},
+		{
+			"id": "e982df85-58ca-420f-b140-ed8d4c973f72",
+			"key": "bookingId",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
