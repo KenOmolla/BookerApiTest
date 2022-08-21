@@ -50,7 +50,7 @@
 					}
 				}
 			],
-			"_postman_id": "66a86345-eae2-49d6-8c2a-4186e504f3fd",
+			"id": "66a86345-eae2-49d6-8c2a-4186e504f3fd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -90,7 +90,7 @@
 					}
 				}
 			],
-			"_postman_id": "f0fde2ef-2d07-4c6c-8941-4410e9d8e69a",
+			"id": "f0fde2ef-2d07-4c6c-8941-4410e9d8e69a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -149,7 +149,7 @@
 					}
 				}
 			],
-			"_postman_id": "d9006dbd-76ba-4707-beff-a3e6979f8f10",
+			"id": "d9006dbd-76ba-4707-beff-a3e6979f8f10",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -171,10 +171,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"firstname\": \"Peter\",\n\"bookingdates\": {\n\"checkout\": \"2027-07-01\"\n},\n\"additionalneeds\": \"Breakfa7st and Supper\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n\"firstname\": \"Peter\",\n\"bookingdates\": {\n\"checkout\": \"2027-07-01\"\n},\n\"additionalneeds\": \"Breakfa7st and Supper\"\n}"
 				},
 				"url": "https://restful-booker.herokuapp.com/booking/{{bookingId}}"
 			},
@@ -205,22 +202,21 @@
 	],
 	"variable": [
 		{
-			"id": "f89b360e-636d-459c-999f-ab31cfcf3edb",
+			"id": "12d5a0ec-d6a8-496f-9df8-3817adfe45f8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3a03f0e4-3206-4785-9d73-97461a092367",
+			"id": "2338fdde-261d-4671-adc0-c45def6ed3a6",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "e982df85-58ca-420f-b140-ed8d4c973f72",
+			"id": "a1123405-cdaf-4d2a-acff-e9a3f68cfdad",
 			"key": "bookingId",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
