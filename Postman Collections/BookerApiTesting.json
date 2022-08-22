@@ -166,7 +166,7 @@
 					},
 					{
 						"key": "Cookie",
-						"value": "token=07b1f0b773fd023"
+						"value": "token=f6c1aa87a20c4d1"
 					}
 				],
 				"body": {
@@ -202,19 +202,19 @@
 	],
 	"variable": [
 		{
-			"id": "9f4c793c-cd1e-4ad7-bc10-81949eeebcfd",
+			"id": "bfdcf699-db86-4fdd-abef-c5e1539ffcde",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d67232de-7793-4410-838a-cc9a108b6d7d",
+			"id": "29059088-8f0b-45c0-888f-fee9d1a1f8ac",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "d3d1c31e-fe91-432f-8a5e-7e1974c359f3",
+			"id": "54a8acae-42a1-41e3-adde-68afc23a5e92",
 			"key": "bookingId",
 			"value": ""
 		}
