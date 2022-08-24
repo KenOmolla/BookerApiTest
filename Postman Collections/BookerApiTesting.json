@@ -126,6 +126,28 @@
 			"response": []
 		},
 		{
+			"name": "Auth",
+			"id": "e2b851b3-9b9d-4930-a1fb-54bdd08654a8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://restful-booker.herokuapp.com/auth"
+			},
+			"response": []
+		},
+		{
 			"name": "PartilaUpdateBooking",
 			"event": [
 				{
@@ -178,28 +200,6 @@
 				"url": "https://restful-booker.herokuapp.com/booking/{{bookingId}}"
 			},
 			"response": []
-		},
-		{
-			"name": "https://restful-booker.herokuapp.com/auth",
-			"id": "e2b851b3-9b9d-4930-a1fb-54bdd08654a8",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://restful-booker.herokuapp.com/auth"
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -226,19 +226,19 @@
 	],
 	"variable": [
 		{
-			"id": "d61ed68c-379c-4807-ba70-3e107e1a254e",
+			"id": "947170b5-ca3b-4df2-9c19-8520b3ad5257",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb1060ff-5844-4233-a9ab-05a425fcadbc",
+			"id": "e56a002a-7a4e-4307-ad81-31e5f931e1a7",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "b0185a59-0029-44aa-9b0e-988e4128022d",
+			"id": "58dca9c3-db23-45d4-9a64-d11831e62b84",
 			"key": "bookingId",
 			"value": ""
 		}
