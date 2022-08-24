@@ -151,8 +151,8 @@
 							"}\r",
 							"},\r",
 							"    (err, res) => {\r",
-							"        // Set BEARERTOKEN\r",
-							"        pm.globals.set(\"BEARERTOKEN\", res.json().access_token)\r",
+							"        // Set Token\r",
+							"        pm.collectionVariables.set(bookingId, res.json().token);\r",
 							"        // console.log(res.json());\r",
 							"});\r",
 							"    }\r",
@@ -224,19 +224,19 @@
 	],
 	"variable": [
 		{
-			"id": "1e89ea33-4c3d-452d-906f-ca0e2d56c829",
+			"id": "3afe6fce-cd4d-4797-9f2b-6bff20203f35",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e259e744-b701-4262-90c9-c484c35c375d",
+			"id": "3e37a6df-6ca8-407f-997d-5fffbd1247b5",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "30c83316-6e57-4228-86f6-a4a1ba8c5017",
+			"id": "513f811e-3caa-4447-8906-6cf244cdd6e1",
 			"key": "bookingId",
 			"value": ""
 		}
