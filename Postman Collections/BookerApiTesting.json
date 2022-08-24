@@ -160,7 +160,7 @@
 						}
 					}
 				},
-				"url": "https://restful-booker.herokuapp.com/auth"
+				"url": "{{baseUrl}}/auth"
 			},
 			"response": []
 		},
@@ -243,19 +243,19 @@
 	],
 	"variable": [
 		{
-			"id": "840bf6fb-8ddc-4841-89ff-108f552a331c",
+			"id": "764deec4-ded3-4cd8-8d92-6b5eb8b5f7e3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "babc5beb-920d-4217-9e9b-17f71fe31243",
+			"id": "f2658007-f204-4af5-ab4e-2e467b13b882",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "0f8e58eb-4590-4b74-8041-64daeea035e9",
+			"id": "3975884c-2538-4d2e-a614-c4b3735da0d9",
 			"key": "bookingId",
 			"value": ""
 		}
