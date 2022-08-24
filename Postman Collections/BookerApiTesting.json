@@ -138,7 +138,7 @@
 							"});\r",
 							"\r",
 							"var responseBody = pm.response.json();\r",
-							"pm.collectionVariables.set(token, responseBody.token);"
+							"pm.collectionVariables.set(\"token\", responseBody.token);"
 						],
 						"type": "text/javascript"
 					}
@@ -243,19 +243,19 @@
 	],
 	"variable": [
 		{
-			"id": "425e8353-c125-40fd-8938-8aa193bc40f3",
+			"id": "6a6fc8c5-756a-4903-a860-284170dc1af3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "748bfc98-df3c-4c16-b87a-fc33fc39ad7c",
+			"id": "71bd854e-fe91-4dd9-a6d4-ff88d66418c7",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "184e5a11-5c84-4249-ad16-066d030cad92",
+			"id": "67a374ce-e3a5-4ab0-91a7-64829705183b",
 			"key": "bookingId",
 			"value": ""
 		}
