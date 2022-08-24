@@ -138,28 +138,8 @@
 							"\r",
 							"//Checks status code and gets token then retries if status code is not 200\r",
 							"pm.test(\"Status code is 200\", function () {\r",
-							"    if (! pm.response.to.have.status(200)){\r",
-							"        pm.sendRequest({\r",
-							"    url: \"https://restful-booker.herokuapp.com/auth\",\r",
-							"    method: 'POST',\r",
-							"    header: {\r",
-							"        'Accept': 'application/json'\r",
-							"    },\r",
-							"    body: {\r",
-							"    \"username\" : \"admin\",\r",
-							"    \"password\" : \"password123\"\r",
-							"}\r",
-							"},\r",
-							"    (err, res) => {\r",
-							"        // Set Token\r",
-							"        pm.collectionVariables.set(bookingId, res.json().token);\r",
-							"        // console.log(res.json());\r",
+							"     pm.response.to.have.status(200);\r",
 							"});\r",
-							"    }\r",
-							"\r",
-							"});\r",
-							"\r",
-							"\r",
 							"\r",
 							"\r",
 							"pm.test(\"Check updates are applied correctly\", function () {\r",
@@ -188,7 +168,7 @@
 					},
 					{
 						"key": "Cookie",
-						"value": "token=f6c1aa87a20c4d1"
+						"value": "token=e78ccd6459befb6"
 					}
 				],
 				"body": {
@@ -224,19 +204,19 @@
 	],
 	"variable": [
 		{
-			"id": "3afe6fce-cd4d-4797-9f2b-6bff20203f35",
+			"id": "86c057b1-6c34-4d6c-b1bb-7ab0f1c829af",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3e37a6df-6ca8-407f-997d-5fffbd1247b5",
+			"id": "0deeefa5-e75c-46cb-b96f-d9af5b5bce26",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "513f811e-3caa-4447-8906-6cf244cdd6e1",
+			"id": "e73498b1-3e97-4bd8-80e9-8842e842f449",
 			"key": "bookingId",
 			"value": ""
 		}
