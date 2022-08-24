@@ -214,7 +214,7 @@
 					"mode": "raw",
 					"raw": "{\n\"firstname\": \"Peter\",\n\"bookingdates\": {\n\"checkout\": \"2027-07-01\"\n},\n\"additionalneeds\": \"Breakfa7st and Supper\"\n}"
 				},
-				"url": "https://restful-booker.herokuapp.com/booking/{{bookingId}}"
+				"url": "{{baseUrl}}/booking/{{bookingId}}"
 			},
 			"response": []
 		}
@@ -243,19 +243,19 @@
 	],
 	"variable": [
 		{
-			"id": "0d00a66d-a92e-4453-a3d9-31b861513dc0",
+			"id": "840bf6fb-8ddc-4841-89ff-108f552a331c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d0c415e5-e2b4-4658-91d7-cb329b065ba1",
+			"id": "babc5beb-920d-4217-9e9b-17f71fe31243",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "a34d7890-57d7-49ba-8691-b2484bdefcfb",
+			"id": "0f8e58eb-4590-4b74-8041-64daeea035e9",
 			"key": "bookingId",
 			"value": ""
 		}
