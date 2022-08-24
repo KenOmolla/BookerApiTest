@@ -240,19 +240,19 @@
 	],
 	"variable": [
 		{
-			"id": "4e1aad05-42f0-4132-8b8f-4b0b2dfb00a5",
+			"id": "d5fa7458-48b5-4c88-a255-ab60a19bffed",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a47716df-796e-434f-b2d2-6fe9f70f47b9",
+			"id": "afd0bcd4-db68-45cb-8844-8effed3d4e01",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "d5cd5d9c-7eac-4399-b770-fbfd8773792b",
+			"id": "11ac2e6c-9fb5-4bac-a981-d44b0a541cde",
 			"key": "bookingId",
 			"value": ""
 		}
