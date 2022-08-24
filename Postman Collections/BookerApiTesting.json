@@ -127,6 +127,23 @@
 		},
 		{
 			"name": "Auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e4ccbb23-0dd1-49c2-b562-8c76880fa53b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var responseBody = pm.response.json();\r",
+							"pm.collectionVariables.set(token, responseBody.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "e2b851b3-9b9d-4930-a1fb-54bdd08654a8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -226,19 +243,19 @@
 	],
 	"variable": [
 		{
-			"id": "947170b5-ca3b-4df2-9c19-8520b3ad5257",
+			"id": "425e8353-c125-40fd-8938-8aa193bc40f3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e56a002a-7a4e-4307-ad81-31e5f931e1a7",
+			"id": "748bfc98-df3c-4c16-b87a-fc33fc39ad7c",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "58dca9c3-db23-45d4-9a64-d11831e62b84",
+			"id": "184e5a11-5c84-4249-ad16-066d030cad92",
 			"key": "bookingId",
 			"value": ""
 		}
