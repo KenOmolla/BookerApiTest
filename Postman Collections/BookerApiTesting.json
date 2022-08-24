@@ -240,13 +240,13 @@
 	],
 	"variable": [
 		{
-			"id": "a4a481c3-9ed1-4d9a-8ed2-b965cae18c89",
+			"id": "c17f8040-3cf5-438f-9168-f8031185316e",
 			"key": "token",
 			"value": "abc123",
 			"type": "string"
 		},
 		{
-			"id": "bc2f1b7f-d052-44c1-999a-74f902e91be7",
+			"id": "c684e7b4-0a50-47b3-bc9d-04eeb77a4721",
 			"key": "bookingId",
 			"value": ""
 		}
