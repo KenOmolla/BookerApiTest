@@ -242,8 +242,13 @@
 	],
 	"variable": [
 		{
-			"id": "30c56c30-7642-4ff9-98b4-5f29c9fcc1e4",
+			"id": "28f50fb6-549c-477a-af9e-7e2c1e1247a1",
 			"key": "bookingId",
+			"value": ""
+		},
+		{
+			"id": "c7d6b264-0be8-483a-b9b3-7bddfb16e795",
+			"key": "token",
 			"value": ""
 		}
 	]
