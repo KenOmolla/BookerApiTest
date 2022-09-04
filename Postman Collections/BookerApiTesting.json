@@ -220,7 +220,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "18be9b49-6ed0-45d7-a27a-4d3f970f6bdc",
+				"id": "6b753919-0fb8-403d-9f75-144375bc43a5",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -230,7 +230,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "acd847af-308e-420a-a208-2eaaa35514a3",
+				"id": "db094978-123b-42e3-81ed-e3e80802fee4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -240,16 +240,21 @@
 	],
 	"variable": [
 		{
-			"id": "e8be8cec-f6e6-4084-9779-400ffb9074ee",
+			"id": "0dcc5f0f-a0ab-4413-8a44-9b7e4a4852bd",
 			"key": "teken1",
 			"value": "sdsdsd",
-			"type": "string",
-			"disabled": true
+			"type": "string"
 		},
 		{
-			"id": "6bf9b177-fc02-4d5d-9657-7445713b9a51",
+			"id": "1bb47500-12b2-4ce9-a56e-155e2d639b55",
 			"key": "bookingId",
 			"value": ""
+		},
+		{
+			"id": "f5d4e0a1-80e3-40ce-8e39-410daf3b138e",
+			"key": "user",
+			"value": "dsfsdfss",
+			"type": "string"
 		}
 	]
 }
