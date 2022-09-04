@@ -240,18 +240,18 @@
 	],
 	"variable": [
 		{
-			"id": "e68accc1-fe59-4701-8e6b-5da34c38c668",
+			"id": "f458c778-c866-4d9e-b3f7-ed443a44265f",
 			"key": "teken1",
 			"value": "sdsdsd",
 			"type": "string"
 		},
 		{
-			"id": "bdaabfea-c308-4856-9f31-4e875c1ca910",
+			"id": "2323ab3c-951f-43c3-a567-f912a86d10fe",
 			"key": "bookingId",
 			"value": ""
 		},
 		{
-			"id": "f63582ff-9d8b-4093-80c0-0607c8f81e45",
+			"id": "bd59e8bb-56ba-46f8-8021-2963b0d7b3da",
 			"key": "user",
 			"value": "dsfsdfss",
 			"type": "string"
