@@ -240,13 +240,13 @@
 	],
 	"variable": [
 		{
-			"id": "a733f4d6-9fe7-4394-8dfb-422113f1513f",
+			"id": "0682c260-5b2d-4946-b806-0777cf3fbf10",
 			"value": "",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "a39bd395-4bbb-4d4e-8295-b4b40adc7319",
+			"id": "15063c62-bd65-42cb-bcbb-d5db9cecb11e",
 			"key": "bookingId",
 			"value": ""
 		}
