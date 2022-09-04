@@ -222,7 +222,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6b753919-0fb8-403d-9f75-144375bc43a5",
+				"id": "b3c990aa-29b9-4f93-8641-3706ea1004fc",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -232,7 +232,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "db094978-123b-42e3-81ed-e3e80802fee4",
+				"id": "4e2526cd-9e4f-4804-a5f5-89ceff9ffa85",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -242,25 +242,8 @@
 	],
 	"variable": [
 		{
-			"id": "5066e9c4-9722-4732-bcb2-48a7e19a5f75",
-			"key": "teken1",
-			"value": "sdsdsd",
-			"type": "string"
-		},
-		{
-			"id": "0e5e63f5-b384-471c-99aa-1f66b9a6a3bc",
+			"id": "30c56c30-7642-4ff9-98b4-5f29c9fcc1e4",
 			"key": "bookingId",
-			"value": ""
-		},
-		{
-			"id": "fb156fdd-76e4-4e0a-ab69-707968c4876c",
-			"key": "user",
-			"value": "dsfsdfss",
-			"type": "string"
-		},
-		{
-			"id": "2a7c647f-3132-4ff5-b6ae-ec4f9cf2cce3",
-			"key": "token",
 			"value": ""
 		}
 	]
