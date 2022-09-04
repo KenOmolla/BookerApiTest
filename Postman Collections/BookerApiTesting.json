@@ -240,14 +240,14 @@
 	],
 	"variable": [
 		{
-			"id": "7db980d5-18ac-41ff-900c-d118eca869d2",
+			"id": "0c97dce4-c339-4e40-8784-a3de3f29557f",
 			"key": "teken1",
 			"value": "sdsdsd",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "d74b54f2-627c-4735-a318-b4951a50f5f3",
+			"id": "1e5e9649-198c-4985-8046-60cb0237bccd",
 			"key": "bookingId",
 			"value": ""
 		}
